@@ -28,7 +28,7 @@ namespace Pool
 		/// </summary>
 		/// <param name="position"> Position to instantiate object.</param>
 		/// <returns> Instantiated object.</returns>
-		public T GetObject(Vector3 position)
+		public virtual T GetObject(Vector3 position)
 		{
 			T obj;
 
