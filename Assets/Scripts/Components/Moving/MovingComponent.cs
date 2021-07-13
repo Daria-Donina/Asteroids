@@ -10,7 +10,7 @@ namespace Components.Moving
 	[RequireComponent(typeof(IInputSource))]
 	public class MovingComponent : MonoBehaviour
 	{
-		[SerializeField] private float movingSpeed;
+		[SerializeField] private float acceleration;
 		[SerializeField] private float rotationSpeed;
 
 		private Rigidbody2D _rigidbody;
@@ -25,7 +25,7 @@ namespace Components.Moving
 		private void Update()
 		{
 			_rigidbody.AddForce(
-				transform.up * (_input.MovingIntensity * movingSpeed * Time.deltaTime)
+				_input.Direction.normalized * (acceleration * Time.deltaTime)
 				, ForceMode2D.Force
 				);
 			

@@ -18,14 +18,14 @@ namespace Components.Shooting
 		/// <summary>
 		/// Shoots the bullet from character position.
 		/// </summary>
-		public void Shoot()
+		public void Shoot(Vector2 direction)
 		{
 			var bullet = _bulletPool.GetObject(transform.position);
 
 			bullet.transform.rotation = transform.rotation;
 			//bullet.gameObject.layer = gameObject.layer;
 
-			bullet.Shoot(transform.up);
+			bullet.Shoot(direction.normalized);
 		}
 	}
 }

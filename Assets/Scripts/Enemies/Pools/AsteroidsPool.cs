@@ -2,14 +2,14 @@
 using Pool;
 using UnityEngine;
 
-namespace Asteroids
+namespace Enemies.Pools
 {
-    public class AsteroidsPool : ObjectPool<AsteroidInput>
+    public class AsteroidsPool : EnemyPool
     {
         [SerializeField]
         private Sprite[] asteroidSprites;
         
-        public override AsteroidInput GetObject(Vector3 position)
+        public override Enemy GetObject(Vector3 position)
         {
             var obj =  base.GetObject(position);
             obj.GetComponent<SpriteRenderer>().sprite = ChooseSprite();

@@ -4,7 +4,7 @@ namespace InputSource
 {
     public interface IInputSource
     {
-        public float MovingIntensity { get; set; }
-        public float RotationAngle { get; set; }
+        public Vector2 Direction { get; }
+        public float RotationAngle { get; }
     }
 }

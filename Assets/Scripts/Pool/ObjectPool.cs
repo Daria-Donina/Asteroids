@@ -42,8 +42,8 @@ namespace Pool
 				obj = _objectsQueue.Dequeue();
 			}
 
-			obj.gameObject.SetActive(true);
 			obj.transform.position = position;
+			obj.gameObject.SetActive(true);
 			return obj;
 		}
 
