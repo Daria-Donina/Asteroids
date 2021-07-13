@@ -18,7 +18,7 @@ namespace Components.Shooting
 		/// <summary>
 		/// Shoots the bullet from character position.
 		/// </summary>
-		public void Shoot(Vector2 direction)
+		public void ShootBullet(Vector2 direction)
 		{
 			var bullet = _bulletPool.GetObject(transform.position);
 

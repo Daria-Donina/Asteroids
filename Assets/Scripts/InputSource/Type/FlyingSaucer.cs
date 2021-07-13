@@ -39,7 +39,7 @@ namespace InputSource.Type
 
         private void Shoot()
         {
-            _weapon.Shoot(_player.transform.position - transform.position);
+            _weapon.ShootBullet(_player.transform.position - transform.position);
         }
     }
 }

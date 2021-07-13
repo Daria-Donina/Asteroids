@@ -27,7 +27,7 @@ namespace Components.Shooting.Bullets
 			// {
 			// 	damagingComponent.OnAttack();
 			// }
-
+			
 			ReturnToPool();
 		}
 
