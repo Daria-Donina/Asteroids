@@ -23,7 +23,7 @@ namespace Components.Shooting
 			var bullet = _bulletPool.GetObject(transform.position);
 
 			bullet.transform.rotation = transform.rotation;
-			//bullet.gameObject.layer = gameObject.layer;
+			bullet.gameObject.layer = gameObject.layer;
 
 			bullet.Shoot(direction.normalized);
 		}

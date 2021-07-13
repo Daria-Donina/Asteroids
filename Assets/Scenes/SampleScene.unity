@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -179,6 +180,30 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!68 &519420030
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.37129006, y: -0.3603879}
+  - {x: 0.0039674193, y: 0.4992342}
+  - {x: 0.35981384, y: -0.3533373}
+  - {x: -0.36879218, y: -0.36038786}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -478,7 +503,8 @@ GameObject:
   - component: {fileID: 878334270}
   - component: {fileID: 878334271}
   - component: {fileID: 878334272}
-  m_Layer: 0
+  - component: {fileID: 878334273}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,6 +650,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba02169734fe1f46a5f3b32c1312762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &878334273
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878334266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.25, y: -0.3503163}
+  - {x: 0.0073797256, y: 0.43944702}
+  - {x: 0.28408688, y: -0.33931586}
+  - {x: -0.24167204, y: -0.35031632}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &960836276
 GameObject:
   m_ObjectHideFlags: 0
