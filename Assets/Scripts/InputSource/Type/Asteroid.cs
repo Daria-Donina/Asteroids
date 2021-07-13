@@ -1,20 +1,20 @@
 ﻿using System;
-using Enemies.Pools;
+using Spawn.Pools;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace InputSource.Type
 {
-    public class Asteroid : Enemy, IInputSource
+    public class Asteroid : SpawnedObject, IInputSource
     {
         [SerializeField] private float maxLifetime = 5f;
-
+        [SerializeField] private float minValue = -0.5f;
+        [SerializeField] private float maxValue = 0.5f;
+        
         public Vector2 Direction { get; private set; }
         public float RotationAngle { get; set; } = 0f;
-
-        private const float MINValue = -0.5f;
-        private const float MAXValue = 0.5f;
-
+        
         private AsteroidsPool _pool;
 
         private void Awake()
@@ -36,14 +36,9 @@ namespace InputSource.Type
         {
             Direction = lookingDirection + 
                         new Vector2(
-                            Random.Range(MINValue, MAXValue), 
-                            Random.Range(MINValue, MAXValue)
+                            Random.Range(minValue, maxValue), 
+                            Random.Range(minValue, maxValue)
                             );
-        }
-
-        private void Return()
-        {
-            _pool.ReturnObject(this);
         }
     }
 }

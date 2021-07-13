@@ -307,7 +307,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 682881919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb45ad24db3349c5a1f867f4fbdda4f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f57a864acbf34293af9dfc73724efe1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startSpawnTime: 5
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 682881919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b8559c29c8e4b6dabf8e1b9eead7c6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dcdc85f028340118a3b92cd78b492df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: -7825469145419317520, guid: 861702750fda735459e0ccb2f03e9893, type: 3}
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 878334271}
   - component: {fileID: 878334273}
   - component: {fileID: 878334272}
+  - component: {fileID: 878334274}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -680,6 +681,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &878334274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878334266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a92b7cd1304e8a9763dcb9505513f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &960836276
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +826,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 985943966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb45ad24db3349c5a1f867f4fbdda4f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f57a864acbf34293af9dfc73724efe1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startSpawnTime: 0
@@ -992,6 +1005,7 @@ Transform:
   - {fileID: 960836277}
   - {fileID: 985943967}
   - {fileID: 682881920}
+  - {fileID: 2108913300}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1159,6 +1173,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2108913299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108913300}
+  - component: {fileID: 2108913302}
+  - component: {fileID: 2108913301}
+  m_Layer: 0
+  m_Name: FragmentsPool
+  m_TagString: FragmentsPool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2108913300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108913299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1347369565}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2108913301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108913299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb45ad24db3349c5a1f867f4fbdda4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2108913302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108913299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e67faa76f0ac4fb41336fd6277204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3195626144770952156, guid: 92bc1784ce9168241ade469740c2be65, type: 3}
+  asteroidSprites:
+  - {fileID: 21300000, guid: d14f9b53cfa720f41b04dfa4be3705f3, type: 3}
+  - {fileID: 21300000, guid: fdfc64f7115c92e4ea24cfbab7a0cb8d, type: 3}
+  - {fileID: 21300000, guid: dadb3ad8d44e29141b3bf416d25a724b, type: 3}
+  - {fileID: 21300000, guid: ee9a6a2ae34ce654c94b09f1487520e1, type: 3}
 --- !u!212 &2691516986399013628
 SpriteRenderer:
   m_ObjectHideFlags: 0

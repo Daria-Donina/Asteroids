@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -7825469145419317520}
   - component: {fileID: -4610655096455640628}
   - component: {fileID: -4387979219567440834}
-  - component: {fileID: 3679949181725825752}
   - component: {fileID: 8617776169836496052}
+  - component: {fileID: 8864145885511401209}
   m_Layer: 7
   m_Name: UFO
   m_TagString: Untagged
@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c006b94d60074ee185fd3bddbdd025e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  betweenShotsTime: 2
-  shotStartDelay: 0.5
+  pool: {fileID: 0}
 --- !u!50 &-4610655096455640628
 Rigidbody2D:
   serializedVersion: 4
@@ -136,18 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 200
   rotationSpeed: 0
---- !u!114 &3679949181725825752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861188016719823721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba02169734fe1f46a5f3b32c1312762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &8617776169836496052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,3 +161,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.85, y: 0.4}
   m_EdgeRadius: 0
+--- !u!114 &8864145885511401209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861188016719823721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a92b7cd1304e8a9763dcb9505513f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
